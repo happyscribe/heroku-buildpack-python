@@ -3,16 +3,16 @@
 echo "Installing python dependencies"
 
 curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
-python get-pip.py
+python3 get-pip.py
 
 echo "pip installed"
 
-python --version 
+
 python3 --version
-python -m pip install -U spacy==3.1.0
-python -m spacy download en_core_web_sm
-python -m spacy download fr_core_news_sm
-python -m spacy download de_core_news_sm
-python -m spacy download es_core_news_sm
+python3 -m pip install -U spacy==3.1.0
+python3 -m spacy download en_core_web_sm
+python3 -m spacy download fr_core_news_sm
+python3 -m spacy download de_core_news_sm
+python3 -m spacy download es_core_news_sm
 
 echo "python dependencies installed"
