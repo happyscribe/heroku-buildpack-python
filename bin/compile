@@ -2,11 +2,12 @@
 
 echo "Installing python dependencies"
 
+export PATH=/app/.local/bin:PATH
+
 curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
 python3 get-pip.py
 
 pip --version
-export PATH=/app/.local/bin:PATH
 
 echo "pip installed"
 
