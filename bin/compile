@@ -2,6 +2,8 @@
 
 echo "Installing python dependencies"
 
+mkdir -p foo $1
+
 curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
 python3 get-pip.py
 
@@ -16,3 +18,4 @@ python3 -m spacy download de_core_news_sm
 python3 -m spacy download es_core_news_sm
 
 echo "python dependencies installed"
+PATH=$PATH:$1
