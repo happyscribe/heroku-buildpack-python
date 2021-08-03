@@ -2,7 +2,12 @@
 
 echo "Installing python dependencies"
 
-source ../.envrc
+export PATH=:/usr/local/bin:$PATH
+
+# Where to store the pip download cache.
+CACHED_DIRS=".heroku"
+PIP_DOWNLOAD_CACHE=${PIP_DOWNLOAD_CACHE:-$CACHE_DIR/pip_downloads}
+
 
 curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
 python3 get-pip.py
