@@ -2,7 +2,7 @@
 
 echo "Installing python dependencies"
 
-source .envrc
+source ../.envrc
 
 curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
 python3 get-pip.py
