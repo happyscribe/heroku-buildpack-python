@@ -16,6 +16,8 @@ python3 get-pip.py
 
 mkdir -p /app/app/dani
 mkdir -p /app/yoel
+mkdir -p /app/vendor/test-dir
+
 
 which python3
 pwd
