@@ -14,9 +14,6 @@ python3 get-pip.py
 
 python3 -m pip --version
 
-mkdir -p /tryout
-cd tryout
-touch file1
 mkdir -p /app/app/dani
 mkdir -p /app/yoel
 
