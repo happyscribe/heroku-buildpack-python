@@ -12,18 +12,25 @@ PIP_DOWNLOAD_CACHE=${PIP_DOWNLOAD_CACHE:-$CACHE_DIR/pip_downloads}
 curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
 python3 get-pip.py
 
-python3 -m pip --version
+
 
 mkdir -p /app/app/dani
 mkdir -p /app/yoel
 
 which python3
+pwd
+python3 -m pip --version
+whoami
 python3 --version
+
+
 python3 -m pip install -U spacy==3.1.0
 python3 -m spacy download en_core_web_sm
 python3 -m spacy download fr_core_news_sm
 python3 -m spacy download de_core_news_sm
 python3 -m spacy download es_core_news_sm
+
+find / | grep spacy
 
 echo "python dependencies installed"
 
